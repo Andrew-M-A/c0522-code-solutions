@@ -7,22 +7,18 @@
   <h1>Coding Form!</h1>
   <form action="">
 
-    <p>Email</p>
-    <label for="email">
-      <input type="text" id="email" name="email">
-    </label>
+    <div> <label for="email"> Email </label> </div>
+    <input type="text" id="email" name="email">
 
-    <p>Why is coding cool?</p>
-    <label for="codingq">
-      <select id="codingq" name="codingq">
-        <option selected=""> Select an option</option>
-        <option value="interesting"> Because it's interesting</option>
-        <option value="fun"> Because it's fun</option>
-        <option value="powerful"> Because it's powerful</option>
-      </select>
-    </label>
+    <div> <label for="codingq">Why is coding cool? </label> </div>
+    <select id="codingq" name="codingq">
+      <option selected=""> Select an option</option>
+      <option value="interesting"> Because it's interesting</option>
+      <option value="fun"> Because it's fun</option>
+      <option value="powerful"> Because it's powerful</option>
+    </select>
 
-    <p>Favorite Language (choose one)</p>
+    <p> Favorite Language (choose one) </p>
     <input id="HTML" type="radio" name="language" value="HTML">
     <label for="HTML"> HTML </label>
     <input id="CSS" type="radio" name="language" value="CSS">
@@ -31,15 +27,13 @@
     <label for="JavaScript"> JavaScript </label>
 
     <p>Would you like to sign up for more information?</p>
-    <input type="checkbox" name="signUp">
+    <input type="checkbox" name="subscription" id="signUp">
     <label for="signUp"> Sign me up! </label>
 
-    <p>Comments</p>
-    <label for="comments"></label>
+    <div> <label for="comments"> Comments </label> </div>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
 
     <div>
-      <label for="submit"></label>
       <input name="submit" type="submit">
     </div>
   </form>

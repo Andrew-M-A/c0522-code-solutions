@@ -1,0 +1,17 @@
+button {
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+tr.header {
+  color: white;
+  background-color: black;
+}

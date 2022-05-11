@@ -1,5 +1,12 @@
-body {
+h1, h2 {
 font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Flex', sans-serif;
-line-height: 150%;
+}
+
+body {
+  line-height: 200%;
+}
+
+p {
+  font-family: 'Roboto Flex',
+  sans-serif;
 }

@@ -26,6 +26,7 @@ body {
 }
 
 .white-circle {
+  margin-left: 75px;
   background-color: white;
   height: 100px;
   width: 100px;
@@ -50,6 +51,7 @@ p {
 
 img {
   background-color: white;
+  margin: 25px;
   height: 50px;
   width: 50px;
 }

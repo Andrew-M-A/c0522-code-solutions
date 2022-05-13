@@ -9,4 +9,39 @@
 
 .column {
   width: 100%;
+  text-align: center;
+}
+
+.half-column {
+  width: 50%;
+  padding-left: 100px;
+}
+
+img {
+  height: 100px;
+}
+
+h1,
+h3 {
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: Karla, sans-serif;
+  font-weight: 300px;
+  font-size: 14px;
+}
+
+button {
+  color: #d14c45;
+  border-color: #d14c45;
+  border-style: double;
+  background-color: white;
+  font-size: 12px;
+  padding: 5px 25px;
 }

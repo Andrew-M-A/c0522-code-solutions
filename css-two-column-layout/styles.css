@@ -18,7 +18,7 @@
 }
 
 img {
-  height: 100px;
+  height: 120px;
 }
 
 h1,
@@ -44,4 +44,5 @@ button {
   background-color: white;
   font-size: 12px;
   padding: 5px 25px;
+  margin: 20px;
 }

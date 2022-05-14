@@ -1,0 +1,28 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.clinicians-prefer-section {
+  height: 250px;
+  background-color: #fafafa;
+}
+
+.learn-more-section {
+  height: 75px;
+}
+
+.black-box-section {
+  background-color: #525350;
+  height: 250px;
+}
+
+footer {
+  height: 75px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+a {
+  padding: 20px;
+}

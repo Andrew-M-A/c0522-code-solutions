@@ -5,44 +5,62 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .column {
-  width: 100%;
+  width: 95%;
   text-align: center;
 }
 
 .half-column {
-  width: 50%;
-  padding-left: 100px;
+  flex-basis: 50%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
+}
+
+p {
+  font-family: Karla, sans-serif;
+  font-size: 15px;
+}
+
+.column > p {
+  font-size: 18px;
 }
 
 img {
-  height: 120px;
+  height: 100px;
 }
 
 h1,
-h3 {
+h2 {
   font-family: Karla, sans-serif;
   font-weight: bold;
 }
 
 h1 {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-p {
-  font-family: Karla, sans-serif;
-  font-weight: 300px;
-  font-size: 14px;
+h2 {
+  font-size: 12px;
+  padding-top: 10px;
 }
 
 button {
+  font-family: Karla, sans-serif;
+  font-weight: bold;
   color: #d14c45;
   border-color: #d14c45;
-  border-style: double;
+  border: solid;
   background-color: white;
   font-size: 12px;
   padding: 5px 25px;
-  margin: 20px;
 }

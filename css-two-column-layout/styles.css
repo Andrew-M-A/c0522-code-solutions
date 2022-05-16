@@ -28,11 +28,14 @@
 
 p {
   font-family: Karla, sans-serif;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .column > p {
-  font-size: 18px;
+  font-size: 14px;
+  font-family: Karla, sans-serif;
 }
 
 img {
@@ -50,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 10px;
 }
 
@@ -59,7 +62,7 @@ button {
   font-weight: bold;
   color: #d14c45;
   border-color: #d14c45;
-  border: solid;
+  border-style: solid;
   background-color: white;
   font-size: 12px;
   padding: 5px 25px;

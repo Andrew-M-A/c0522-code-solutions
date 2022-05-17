@@ -9,12 +9,12 @@
   padding: 10px;
 }
 
-.column {
-  width: 95%;
+.column-full {
+  width: 100%;
   text-align: center;
 }
 
-.half-column {
+.column-half {
   flex-basis: 50%;
 }
 
@@ -29,8 +29,8 @@
 p {
   font-family: Karla, sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 2;
 }
 
 .column > p {
@@ -49,7 +49,7 @@ h2 {
 }
 
 h1 {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 h2 {
@@ -59,11 +59,12 @@ h2 {
 
 button {
   font-family: Karla, sans-serif;
-  font-weight: bold;
   color: #d14c45;
-  border-color: #d14c45;
+  border-color: #e5948e;
+  font-weight: bold;
+  border: 1px;
   border-style: solid;
   background-color: white;
-  font-size: 12px;
+  font-size: 10px;
   padding: 5px 25px;
 }

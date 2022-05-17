@@ -67,11 +67,9 @@ var orderHistory = [
           author: 'Faroult, Stephane',
           price: 33.99,
           returnWindow: 'closed on Aug 4, 2020',
-          }
-        ]
+          },
+        ],
       },
     ],
   },
-]
-
-];
+]:

@@ -1,0 +1,48 @@
+h3 {
+  margin: auto;
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.screen-resize {
+  width: 95%;
+}
+
+.icon-resize {
+  width: 30%;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h5 {
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 12px;
+  font-family: Barlow, sans-serif;
+}

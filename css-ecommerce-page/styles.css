@@ -21,6 +21,10 @@
   width: 90%;
 }
 
+.resize-lv-bag {
+  width: 162px;
+}
+
 .contain {
   object-fit: cover;
 }

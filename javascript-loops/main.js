@@ -10,7 +10,7 @@
 function getNumbersToTen() {
   var numbers = [];
   var currentNumber = 1;
-  while (currentNumber < 10) {
+  while (currentNumber <= 10) {
     numbers.push(currentNumber);
     currentNumber++;
   }
@@ -53,8 +53,15 @@ function doubleAll(numbers) {
 
 function getKeys(object) {
   var keys = [];
-  for (object.property in object) {
-    keys.push(object.property);
+  for (var x in object) {
+    keys.push(x);
   }
   return keys;
+}
+
+function getValues(object) {
+  var values = [];
+  for (var x in object) {
+    values.push(object[x]);
+  } return values;
 }

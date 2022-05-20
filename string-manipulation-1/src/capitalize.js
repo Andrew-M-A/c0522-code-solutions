@@ -1,5 +1,7 @@
 /* exported capitalize */
 
 function capitalize(word) {
-  return word.toUpperCase(word[0]);
+  if (word[0] !== word[0].toUpperCase()) {
+    return word[0].toUpperCase();
+  }
 }

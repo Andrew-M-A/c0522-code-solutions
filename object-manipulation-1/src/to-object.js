@@ -8,3 +8,8 @@ function toObject(keyValuePair) {
   newObj[key] = value;
   return newObj;
 }
+
+/* create an object literal to hold the keyValuePair
+   create a variable that assigns keyValuePair[0] to it
+   create a variable that assigns keyValuePair[1] to it
+   return the object that we made */

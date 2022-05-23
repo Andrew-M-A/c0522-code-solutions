@@ -10,8 +10,8 @@ function getValues(object) {
   return valuesArray;
 }
 
-/* create a new array to hold the property values of the function parameter
-   use a for-in loop to iterate through the object properties
-   use the push method of the new array and pass object at [] variable used...
-   for the for-in loop
-   return the new array */
+/* 1.) assign an empty array literal to a variable, valuesArray
+   2.) use a for in loop with a variable key in object
+   3.) use the push method of the valuesArray array and pass an arguement of
+   object[key]
+   4.) return valuesArray */

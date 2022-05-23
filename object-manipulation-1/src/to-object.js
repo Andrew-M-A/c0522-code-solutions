@@ -12,4 +12,4 @@ function toObject(keyValuePair) {
 /* create an object literal to hold the keyValuePair
    create a variable that assigns keyValuePair[0] to it
    create a variable that assigns keyValuePair[1] to it
-   return the object that we made */
+   return the variable that the object literal was assigned to */

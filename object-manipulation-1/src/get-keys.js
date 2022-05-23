@@ -9,8 +9,7 @@ function getKeys(object) {
   return propArray;
 }
 
-/* create a new array to hold the keys
-   use a for-in loop to get the keys in the object
-   use the push method of the new array...
-   and pass the variable from the for-in loop as an argument
-   return the new array */
+/* 1.) assign an empty array literal to a variable, propArray
+   2.) use a for-in loop with a variable key in object
+   3.)call the push method of the propArray array with an argument of key
+   4.) return propArray */

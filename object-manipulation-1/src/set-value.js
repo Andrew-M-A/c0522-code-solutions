@@ -5,5 +5,5 @@ function setValue(object, key, value) {
   return object;
 }
 
-/* use bracket notation to assign our value parameter to object[key]
-   return the object parameter */
+/* 1.) use bracket notation to assign our object[key] a value of value
+   2.) return object */

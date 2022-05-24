@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;600;700;800&amp;display=swap" rel="stylesheet">
+  <title> CSS Four Column Layout </title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h3>How It Works</h3>
+    </div>
+
+    <div class="row">
+      <div class="column-fourth">
+        <img class="screen-resize" src="images/screen-1.png" alt="">
+      </div>
+      <div class="column-fourth">
+        <img class="screen-resize" src="images/screen-2.png" alt="">
+      </div>
+      <div class="column-fourth">
+        <img class="screen-resize" src="images/screen-3.png" alt="">
+      </div>
+      <div class="column-fourth">
+        <img class="screen-resize" src="images/screen-4.png" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-fourth flex-column">
+        <img class="icon-resize" src="images/switch-icon.png" alt="">
+        <h6 class="margin-10">App Switching</h6>
+        <p>Toggles all your apps on and off.</p>
+      </div>
+
+      <div class="column-fourth flex-column">
+        <img class="icon-resize" src="images/filter-icon.png" alt="">
+        <h6 class="margin-10">Trip Filtering</h6>
+        <p>Evaluates your trip requests.</p>
+      </div>
+
+      <div class="column-fourth flex-column">
+        <img class="icon-resize" src="images/slider-icon.png" alt="">
+        <h6 class="margin-10">Service Filters</h6>
+        <p>Accepts only your ideal trips.</p>
+      </div>
+
+
+      <div class="column-fourth flex-column">
+        <img class="icon-resize" src="images/bars-icon.png" alt="">
+        <h6 class="margin-10">Stats + Mileage</h6>
+        <p>Tracks your trips across all apps.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -4,5 +4,8 @@ function capitalize(word) {
   return word[0].toUpperCase() + word.slice(1).toLowerCase();
 }
 
-/* 1.) take the first letter of our parameter (@ 0)and capitalize it with the toUpperaCase method
- 2.) concatenate that with the rest of the parameter by using the slice method at the next letter (@ 1) and then toLowerCase that */
+/* a function that returns the word parameter with the first character capitalized and the rest lowercase
+
+1.) define a function named "capitalize" that takes in one parameter "word" which is a single word JavaScript String
+2.) call the toUpperCase method of the word object at index[0] ... this will select the first letter of word and capitalize it
+3.) concatenate the previous expression with the */

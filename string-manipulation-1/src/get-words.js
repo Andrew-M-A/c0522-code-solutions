@@ -5,7 +5,8 @@ function getWords(string) {
   var splits = string.split(' ');
   if (string === '') {
     return empty;
-  } return splits;
+  }
+  return splits;
 }
 
 /* a function that takes in a string containing zero or more words,

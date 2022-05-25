@@ -3,7 +3,8 @@
 function isLowerCased(word) {
   if (word === word.toLowerCase(word)) {
     return true;
-  } return false;
+  }
+  return false;
 }
 
 /* 1.) use an if statement with the condition,

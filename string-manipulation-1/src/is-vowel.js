@@ -8,7 +8,8 @@ function isVowel(character) {
   character === 'o' || character === 'O' ||
   character === 'u' || character === 'U') {
     return true;
-  } return false;
+  }
+  return false;
 }
 
 /*

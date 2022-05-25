@@ -13,9 +13,11 @@ function getWords(string) {
  separated by spaces as a parameter
 and returns the string in an array, with each value being a word from the parameter
 
-1.) assign an empty array literal to a variable
-2.) call the split method on the string parameter with an argument of (' ') and assign that to a variable
-3.) use an if statement with the condition that if
-'string' parameter === an empty string (''), return the array
-4.) else, return the variable that string.split was assigned to
- */
+1.) define a function named getWords that takes one parameter "string", that is any JavaScript String
+2.) assign an empty array literal to a variable in case the string is empty
+3.) call the split method on the string parameter with an argument of (' ') and assign that to a variable
+4.) use an if statement with the condition that if
+'string' parameter === an empty string (''), return the array from step 1
+5.) else, return the variable that string.split was assigned to
+
+*/

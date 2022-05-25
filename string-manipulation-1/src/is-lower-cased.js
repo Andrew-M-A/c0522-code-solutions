@@ -7,7 +7,9 @@ function isLowerCased(word) {
   return false;
 }
 
-/* 1.) use an if statement with the condition,
-if the parameter is strictly equal to the parameter.toLowerCase(parameter),
-return true
-2.) else, return false */
+/* a function that checks if a word is lowercase
+
+1.) define a function named isLowerCased that takes one parameter, "word" which is any JavaScript String
+2.) within the function code block, initialize an "if" statement with the condition...
+
+*/

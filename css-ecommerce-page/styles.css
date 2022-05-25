@@ -1,0 +1,47 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.column-fifth {
+  flex-basis: 20%;
+}
+
+.resize-img {
+  width: 90%;
+}
+
+.resize-lv-bag {
+  width: 162px;
+}
+
+.contain {
+  object-fit: cover;
+}
+
+.item-style {
+  font-size: 10px;
+  font-family: "DM sans", sans-serif;
+}
+
+.grey-text {
+  color: lightgrey;
+}
+
+.highlight {
+  background-color: #efe2d8;
+}
+
+h3 {
+  font-family: "DM sans", sans-serif;
+}

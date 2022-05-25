@@ -1,0 +1,21 @@
+.container {
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 40px;
+}
+
+.green-span {
+  color: green;
+}
+
+.red-span {
+  color: red;
+}

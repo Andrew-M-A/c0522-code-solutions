@@ -3,9 +3,9 @@ var $input = document.querySelector('#contact-form');
 function onSubmit(event) {
   event.preventDefault();
   var values = {};
-  values.name = $input[0].value;
-  values.email = $input[1].value;
-  values.message = $input[2].value;
+  values.name = $input.name.value;
+  values.email = $input.email.value;
+  values.message = $input.message.value;
   console.log(values);
 }
 

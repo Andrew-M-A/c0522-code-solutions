@@ -2,8 +2,8 @@
 
 function tail(array) {
   var tailEnd = [];
-  for (var i = 0; i < array.length - 1; i++) {
-    tailEnd.push(array[i + 1]);
+  for (var i = 1; i < array.length; i++) {
+    tailEnd.push(array[i]);
   }
   return tailEnd;
 }

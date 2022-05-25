@@ -2,8 +2,8 @@
 
 function initial(array) {
   var firstIndexes = [];
-  for (var i = 1; i < array.length; i++) {
-    firstIndexes.push(array[i - 1]);
+  for (var i = 0; i < array.length - 1; i++) {
+    firstIndexes.push(array[i]);
   }
   return firstIndexes;
 }

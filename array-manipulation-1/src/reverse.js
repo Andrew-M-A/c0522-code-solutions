@@ -17,5 +17,5 @@ function reverse(array) {
           is greater than or equal to 0 (since first index begins at 0),
             -push the value of array at i into the empty array
         - decrement i after every loop
-  4.) return the empty array
+  4.) return the array defined in step 1
 */

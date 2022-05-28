@@ -11,7 +11,7 @@ function isLowerCased(word) {
 
 1.) define a function named isLowerCased that takes one parameter, "word" which is any JavaScript String
 2.) use an if statement that checks if the parameter is strictly equal to the parameter lower-cased
-3.) if it is, return tru
+3.) if it is, return true
 4.) if not, return false
 
 */

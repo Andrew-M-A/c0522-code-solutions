@@ -9,6 +9,6 @@ function capitalize(word) {
 1.) define a function named "capitalize" that takes in one parameter "word" which is a single word JavaScript String
 2.) access the first letter of the parameter and capitalize it
 3.) extract the rest of the parameter (index 1 and so on) and lower case it
-4.) concatenate and return the two previous expressions
+4.) concatenate the step 2 with the previous step and return the result of that expression
 
 */

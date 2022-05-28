@@ -15,5 +15,5 @@ function reverseWord(word) {
     and does so as long as i (the initialization variable) is greater than or equal to 0
     4.) concatenate and assign the parameter at index i to the empty string variable every loop
     5.) decrement i after every loop
-    6.) return the empty string variable
+    6.) return the string variable from step 1
 */

@@ -13,8 +13,8 @@ function isVowel(character) {
 }
 
 /*
-  1.)use an if statement with the condition
-  if the parameter is equal to 'a' or 'A' or 'e' or 'E'
-  'i' or 'I' or 'o' or 'O' or 'u' or 'U' ,
-  return true
-  2.) else, return false */
+  1.) define a function that takes in one parameter which is a single character string
+  2.) check if the parameter is equal to a vowel... both upper and lower case
+  3.) if it is, return true
+  2.) if it isn't, return false
+*/

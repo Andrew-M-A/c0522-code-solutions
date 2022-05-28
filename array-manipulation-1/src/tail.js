@@ -9,10 +9,11 @@ function tail(array) {
 }
 
 /*
-
-1.) create a new array literal
-2.) create a for loop that iterates through the length of our parameter (array)
-3.) since we're returning the values of the array AFTER the first index, push the value of the array at [i + 1]
-4.) return the new array
-
+  1.) define a function with one parameter which is an array...
+  which returns every element AFTER the first
+  2.) assign an empty array to a variable
+  3.) use a for loop to iterate through the parameter array
+      and push the parameter array at initialization variable into
+      the empty array
+  4.) return the empty array
 */

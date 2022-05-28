@@ -8,8 +8,14 @@ function reverse(array) {
   return backwards;
 }
 
-/* 1.) assign an empty array to a variable
-2.) use a for loop with an initialization of i = array.length,
-a conditon of i >= 0, and then decrement i
-3.) call the push method of the empty array variable with an arguemtn of array[i]
-4.) return the empty array variable */
+/*
+  1.) define a function with one parameter which is an array
+  2.) assign an empty array to a variable
+  3.) use a for loop to iterate through the array
+        - STARTING at the end of the array
+        - as long as i (or whatever variable initialized)
+          is greater than or equal to 0 (since first index begins at 0),
+            -push the value of array at i into the empty array
+        - decrement i after every loop
+  4.) return the empty array
+*/

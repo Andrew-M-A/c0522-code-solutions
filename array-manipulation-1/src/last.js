@@ -5,6 +5,7 @@ function last(array) {
 
 }
 
-// define a function, "last", that passes one parameter, "array"
-
-// return the value of array at array.length-1 (the last value)
+/*
+  1.) define a function with one parameter, which is an array
+  2.) access the last index of the parameter array and return it
+*/

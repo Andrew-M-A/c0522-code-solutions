@@ -4,6 +4,7 @@ function head(array) {
   return array[0];
 }
 
-// define a function, "head", that passes one parameter, "array"
-
-// return the value of the first index of the array
+/*
+  1.) define a function that takes in one parameter which is an array and returns the first element
+  2.) use bracket notation to access the first index of the array and return that expression
+*/

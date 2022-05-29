@@ -1,7 +1,14 @@
+body {
+  margin: 0;
+}
+
 .container {
-  width: 800px;
-  margin: auto;
+  margin: 0 auto;
   white-space: pre;
+}
+
+.column-full: {
+  width: 100%;
 }
 
 .row {
@@ -14,9 +21,25 @@ span {
 }
 
 .green-span {
-  color: green;
+  color: #66bb63;
+  transform: rotate(1turn);
+  transition: 0.5s;
 }
 
 .red-span {
+  color: #ff4b0a;
+}
+
+.underline {
+  border-bottom: solid;
+}
+
+.red-underline {
+  border-bottom: solid;
   color: red;
+}
+
+h1 {
+  color: #8974aa;
+  text-align: center;
 }

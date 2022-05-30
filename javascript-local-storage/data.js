@@ -4,7 +4,9 @@ var todos = [];
 
 var previousTodosJSON = localStorage.getItem('javascript-local-storage');
 
-todos = JSON.parse(previousTodosJSON);
+if (previousTodosJSON !== null) {
+  todos = JSON.parse(previousTodosJSON);
+}
 
 function storeTodos(event) {
   var todosJSON = JSON.stringify(todos);

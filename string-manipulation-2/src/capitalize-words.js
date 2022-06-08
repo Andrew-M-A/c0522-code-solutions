@@ -12,5 +12,5 @@ function capitalizeWords(string) {
 1.) split each string up into single words
 2.) use a for loop to find the first letter of each word and capitalize it
 3.) lower case the rest of the word
-4.) rejoin the words
+4.) re-join the words with a space and return the result of that expression
 */

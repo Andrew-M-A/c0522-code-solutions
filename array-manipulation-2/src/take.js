@@ -12,5 +12,9 @@ function take(array, count) {
 
 /*
 1.) define an empty array to hold the new specified indexes
-2.) return the empty array if count is longer than the length of the array parameter
+2.) use an if statement to check if the count parameter is greater than the length of the array
+3.) if it is, return the empty array (edge case)
+4.) use a for loop that runs as long as "i" is less than the count parameter
+5.) as long as it is, push the values of array at "i" into the array defined in step 1
+6.) return the array defined in step 1
 */

@@ -5,7 +5,8 @@ function drop(array, count) {
   while (count < array.length) {
     dropArray.push(array[count]);
     count++;
-  } return dropArray;
+  }
+  return dropArray;
 }
 
 /*

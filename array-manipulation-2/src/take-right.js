@@ -5,7 +5,8 @@ function takeRight(array, count) {
     return array;
   } for (var i = array.length - count; i < array.length; i++) {
     rightArray.push(array[i]);
-  } return rightArray;
+  }
+  return rightArray;
 }
 
 /*

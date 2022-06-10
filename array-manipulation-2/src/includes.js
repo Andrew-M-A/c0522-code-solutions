@@ -4,7 +4,8 @@ function includes(array, value) {
     if (array[i] === value) {
       return true;
     }
-  } return false;
+  }
+  return false;
 }
 
 /*

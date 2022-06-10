@@ -5,11 +5,11 @@ var $modal = document.querySelector('.modal');
 var $noButton = document.querySelector('.no-button');
 
 function modalClick(event) {
-  $modal.style.display = 'block';
+  $modal.className = 'modal active';
 }
 
 function noButtonClick(event) {
-  $modal.style.display = 'none';
+  $modal.className = 'modal hidden';
 }
 
 $openModalButton.addEventListener('click', modalClick);

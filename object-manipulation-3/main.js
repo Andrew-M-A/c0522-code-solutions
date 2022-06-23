@@ -9,4 +9,10 @@ var deck = [];
 
 var suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
 
-var rank = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+
+for (var suit = 0; suit < suits.length; suit++) {
+  for (var rank = 0; rank < ranks.length; rank++) {
+    console.log(rank);
+  }
+}

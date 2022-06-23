@@ -26,3 +26,8 @@ for (var suit = 0; suit < suits.length; suit++) {
     deck.push(card);
   }
 }
+
+for (var i = deck.length - 1; i > 0; i--) {
+  var shuffle = Math.floor(Math.random() * i);
+  console.log(deck[shuffle]);
+}

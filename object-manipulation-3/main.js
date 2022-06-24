@@ -9,10 +9,22 @@ console.log('Lodash is loaded:', typeof _ !== 'undefined');
 // should have 52 objects after
 // push those cards into the deck array
 
-var aj = [];
-var anthony = [];
-var andrew = [];
-var alex = [];
+var aj = {
+  name: 'AJ',
+  hand: []
+};
+var anthony = {
+  name: 'Anthony',
+  hand: []
+};
+var andrew = {
+  name: 'Andrew',
+  hand: []
+};
+var alex = {
+  name: 'Alex',
+  hand: []
+};
 
 var deck = [];
 
@@ -27,7 +39,13 @@ for (var suit = 0; suit < suits.length; suit++) {
   }
 }
 
-for (var i = deck.length - 1; i > 0; i--) {
-  var shuffle = Math.floor(Math.random() * i);
-  console.log(deck[shuffle]);
+deck = _.shuffle(deck);
+
+for (var i = 0; i < 2; i++) {
+  aj.hand.push(deck[i]);
+  anthony.hand.push(deck[i]);
+  andrew.hand.push(deck[i]);
+  alex.hand.push(deck[i]);
 }
+
+console.log(aj.hand, anthony.hand, andrew.hand, alex.hand);

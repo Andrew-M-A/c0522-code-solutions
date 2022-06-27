@@ -1,17 +1,22 @@
 /* exported equal */
 
 // loop through both arrays
-// if the index-n of the first is NOT equal to the second, return false
-// else return true (because they're equal)
+// define a variable to hold boolean value
+// if the index-n of the first is NOT equal to the second, assign false to variable
+// else assign true to variable
 
 function equal(first, second) {
+
+  var equalityCheck = true;
 
   for (var i = 0; i < first.length; i++) {
     for (var k = 0; k < second.length; k++) {
       if (first[i] !== second[k]) {
-        return false;
+        equalityCheck = false;
+      } else {
+        equalityCheck = true;
       }
     }
   }
-  return true;
+  return equalityCheck;
 }

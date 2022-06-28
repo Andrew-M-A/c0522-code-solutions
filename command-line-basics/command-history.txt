@@ -1,0 +1,122 @@
+    1  git switch main
+    2  git status
+    3  git pull origin main
+    4  git branch es6-const-let
+    5  git switch es6-const-let 
+    6  git add .
+    7  git commit -m "Completed es-6-const-let exercise"
+    8  git push origin es6-const-let 
+    9  git switch main
+   10  git pull origin main
+   11  git status
+   12  git pull origin main
+   13  git branch es6-template-literals
+   14  git switch es6-template-literals 
+   15  git add .
+   16  git commit -m "Completed es6-template-literals exercise"
+   17  git push origin es6-template-literals 
+   18  git switch main
+   19  git pull origin main
+   20  git pull origin main
+   21  git branch es6-destructuring
+   22  git switch es6-destructuring
+   23  git add .
+   24  git commit -m "Completed es6-destructuring exercise"
+   25  git push origin es6-destructuring
+   26  git switch main
+   27  git switch string-manipulation-3
+   28  git add .
+   29  git commit -m "accounted for spaces and finished is-anagram!"
+   30  git add .
+   31  git commit -m "in progress"
+   32  git switch array-manipulation-3
+   33  git add .
+   34  git commit -m "in progress"
+   35  git switch main
+   36  git branch es6-arrow-functions
+   37  git switch es6-arrow-functions
+   38  git add .
+   39  git commit -m "Completed es6-arrow-functions exercise"
+   40  git push origin es6-arrow-functions
+   41  git switch main
+   42  git branch comman-line-basics
+   43  git branch -d comman-line-basics
+   44  git branch command-line-basics
+   45  git switch command-line-basics 
+   46  cd command-line-basics
+   47  man man
+   48  man man
+   49  man ca
+   50  man cat
+   51  cat laziness.txt
+   52  cat impatience.txt
+   53  cat hubris.txt
+   54  cat laziness.txt impatience.txt hubris.txt 
+   55  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+   56  cat three-virtues.txt 
+   57  man ls
+   58  man cat
+   59  man ls
+   60  man ls
+   61  ls command-line-basics
+   62  ls workspaces
+   63  ls /workspaces
+   64  ls /workspaces/c0522-code-solutions/
+   65  ls -a /workspaces/c0522-code-solutions/
+   66  ls -F /workspaces/c0522-code-solutions/
+   67  ls lfz-staff/
+   68  ls -a lfz-staff/
+   69  ls -F lfz-staff/
+   70  ls -aF lfz-staff/
+   71  ls -aF workspaces/c0522-code-solutions
+   72  ls -aF /workspaces/c0522-code-solutions/
+   73  ls -aF lfz-staff > lfz-staff/contents.txt
+   74  cat lfz-staff/contents.txt
+   75  man pwd
+   76  pwd
+   77  pwd > i-was-here.txt
+   78  ls pwd
+   79  ls /workspaces/c0522-code-solutions/
+   80  ls /workspaces/c0522-code-solutions/command-line-basics
+   81  cat kill-me
+   82  cat i-was-here
+   83  cat i-was-here.txt
+   84  ls kill-me
+   85  man echo
+   86  echo 'Hello, World!'
+   87  echo 'Hello, World!' > hello.txt
+   88  ls /workspaces/c0522-code-solutions/command-line-basics
+   89  cat hello.txt
+   90  man touch
+   91  man touch
+   92  touch tag-youre-it.txt
+   93  touch snoot/boop.txt
+   94  ls snoot
+   95  ls snoot/
+   96  man mkdir
+   97  mkdir parent
+   98  ls parent
+   99  ls /workspaces/c0522-code-solutions/command-line-basics
+  100  mkdir parent/
+  101  mkdir -p parent/child/grandchild
+  102  touch -p parent/child/grandchild/.gitkeep
+  103  mkdir -p parent/child/grandchild/.gitkeep
+  104  touch parent/child/grandchild/.gitkeep
+  105  ls -a parent/child/grandchild/
+  106  man mv
+  107  man mv
+  108  mv pokimans/ pokemon/
+  109  mv pokiemans/ pokemon/
+  110  ls /workspaces/c0522-code-solutions/command-line-basics
+  111  man rm
+  112  rm lol.txt
+  113  ls /workspaces/c0522-code-solutions/command-line-basics/
+  114  rm -r kill-me/
+  115  ls /workspaces/c0522-code-solutions/command-line-basics/
+  116  man cp
+  117  cp and-then.txt no-and-then.txt
+  118  ls /workspaces/c0522-code-solutions/command-line-basics
+  119  cat and-then.txt no-and-then.txt
+  120  man history
+  121  history
+  122  history > command-history.txt

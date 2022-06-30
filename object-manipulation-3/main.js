@@ -27,9 +27,7 @@ var alex = {
 };
 
 var deck = [];
-
 var suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
-
 var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
 for (var suit = 0; suit < suits.length; suit++) {
@@ -40,12 +38,5 @@ for (var suit = 0; suit < suits.length; suit++) {
 }
 
 deck = _.shuffle(deck);
-
-for (var i = 0; i < 2; i++) {
-  aj.hand.push(deck[i]);
-  anthony.hand.push(deck[i]);
-  andrew.hand.push(deck[i]);
-  alex.hand.push(deck[i]);
-}
 
 console.log(aj.hand, anthony.hand, andrew.hand, alex.hand);

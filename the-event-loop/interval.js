@@ -9,3 +9,5 @@ function countdown() {
     clearInterval(intervalCount);
   }
 }
+
+console.log(' ');

@@ -39,4 +39,13 @@ for (var suit = 0; suit < suits.length; suit++) {
 
 deck = _.shuffle(deck);
 
-console.log(aj.hand, anthony.hand, andrew.hand, alex.hand);
+const deal = player => {
+  for (var i = 0; i < 1; i++) {
+    player.hand = deck.splice(0, 2);
+  }
+};
+
+deal(aj);
+deal(anthony);
+deal(andrew);
+deal(alex);

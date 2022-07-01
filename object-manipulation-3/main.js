@@ -33,6 +33,13 @@ var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 for (var suit = 0; suit < suits.length; suit++) {
   for (var rank = 0; rank < ranks.length; rank++) {
     var card = { suit: suits[suit], rank: ranks[rank] };
+    if (card.rank !== 'J' && card.rank !== 'Q' && card.rank !== 'K' && card.rank !== 'A') {
+      card.value = parseInt(ranks[rank]);
+    } else if (card.rank === 'A') {
+      card.value = 11;
+    } else {
+      card.value = 10;
+    }
     deck.push(card);
   }
 }

@@ -4,12 +4,12 @@ const jsonDerulo = require('./data.json');
 const command = process.argv[2];
 const action = process.argv[3];
 const updateText = process.argv[4];
+const notes = jsonDerulo.notes;
 
 if (command === 'read') {
-  fs.readFile('data.json', 'utf8', (err, data) => {
-    if (err) throw err;
-    console.log(jsonDerulo.notes);
-  });
+  for (var property in notes) {
+    console.log(property + ': ' + notes[property]);
+  }
 }
 
 if (command === 'create') {

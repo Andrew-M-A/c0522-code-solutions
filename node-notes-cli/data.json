@@ -1,5 +1,5 @@
 {
-  "nextId": 13,
+  "nextId": 20,
   "notes": {
     "1": "The event loop is how a JavaScript runtime pushes asynchronous callbacks onto the stack once the stack is cleared.",
     "2": "Prototypal inheritance is how JavaScript objects delegate behavior.",
@@ -8,6 +8,12 @@
     "5": "5 should update right about..... now!",
     "9": "assigning action",
     "11": "mama we made it",
-    "12": "mama we made ittttt!"
+    "12": "mama we made ittttt!",
+    "14": "hello",
+    "15": "got emmmmmmm",
+    "16": "didnt",
+    "17": "realize",
+    "18": "notes was an",
+    "19": "object :)"
   }
 }

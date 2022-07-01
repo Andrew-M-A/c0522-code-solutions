@@ -50,6 +50,22 @@ const deal = player => {
   for (var i = 0; i < 1; i++) {
     player.hand = deck.splice(0, 2);
   }
+  score(player);
+  winner(player);
+};
+
+const score = player => {
+  player.score = null;
+  for (var i = 0; i < player.hand.length; i++) {
+    player.score += player.hand[i].value;
+  }
+};
+
+let greatest = 0;
+const winner = player => {
+  if (greatest <= player.score) {
+    greatest = player.score;
+  }
 };
 
 deal(aj);

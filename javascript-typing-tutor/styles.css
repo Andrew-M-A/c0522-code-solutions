@@ -5,14 +5,16 @@ body {
 .container {
   margin: 0 auto;
   white-space: pre;
+  height: 85vh;
 }
 
-.column-full: {
+.column-full {
   width: 100%;
 }
 
 .row {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 

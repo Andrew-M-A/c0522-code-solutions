@@ -19,4 +19,16 @@ app.get('/api/notes', (req, res) => {
   res.status(200).json(notes);
 });
 
+app.get('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  if (data.notes[id] === undefined && id > 0) {
+    res.status(404).send('this entry doesn\'t exist!');
+  } else if (id < 0) {
+    res.status(400).send('invalid ID number');
+  } else {
+    res.send(data.notes[id]);
+  }
+}
+);
+
 app.use(express());

@@ -50,25 +50,36 @@ const deal = player => {
   for (var i = 0; i < 1; i++) {
     player.hand = deck.splice(0, 2);
   }
-  score(player);
-  winner(player);
-};
-
-const score = player => {
-  player.score = null;
-  for (var i = 0; i < player.hand.length; i++) {
-    player.score += player.hand[i].value;
-  }
-};
-
-let greatest = 0;
-const winner = player => {
-  if (greatest <= player.score) {
-    greatest = player.score;
-  }
 };
 
 deal(aj);
 deal(anthony);
 deal(andrew);
 deal(alex);
+
+const greatest = [];
+
+const score = player => {
+  player.score = null;
+  for (var i = 0; i < player.hand.length; i++) {
+    player.score += player.hand[i].value;
+  }
+  greatest.push(player);
+};
+
+score(aj);
+score(anthony);
+score(andrew);
+score(alex);
+
+// const winner = player => {
+//   let highScore = 0;
+//   let winner = null;
+//   for (var i = 0; i < greatest.length; i++) {
+//     if (greatest[i].score > highScore) {
+//       highScore = greatest[i].score;
+//       winner = greatest[i].name;
+//     }
+//   }
+//   return `${winner} is the winner with a score of ${highScore}!`;
+// };

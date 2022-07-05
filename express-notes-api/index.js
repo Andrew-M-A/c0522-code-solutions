@@ -21,10 +21,13 @@ app.get('/api/notes', (req, res) => {
 
 app.get('/api/notes/:id', (req, res) => {
   const id = req.params.id;
-  if (data.notes[id] === undefined && id > 0) {
-    res.status(404).send('this entry doesn\'t exist!');
-  } else if (id < 0) {
-    res.status(400).send('invalid ID number');
+  const error = {};
+  if (id < 0) {
+    error.error = 'invalid entry... ID must be a positive number';
+    res.status(400).json(error);
+  } else if (data.notes[id] === undefined) {
+    error.error = `entry ${id} doesn't exist`;
+    res.status(404).json(error);
   } else {
     res.send(data.notes[id]);
   }

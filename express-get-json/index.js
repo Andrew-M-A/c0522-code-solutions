@@ -1,7 +1,9 @@
 const express = require('express');
+
 const app = express();
 
-const grades = {
+var grades = {
+
   12: {
     id: 12,
     name: 'Tim Berners-Lee',
@@ -21,3 +23,15 @@ const grades = {
     score: 92
   }
 };
+
+app.get('/api/grades', (req, res) => {
+  const studentGrades = [];
+
+  for (const property in grades) {
+    studentGrades.push(grades[property]);
+  }
+  res.json(studentGrades);
+});
+
+app.listen(3000, () => {
+});

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const data = require('./data.json');
+const fs = require('fs');
 
 app.listen(3000, () => {
   // console.log('listening on port 3 stacks!');
@@ -34,4 +35,64 @@ app.get('/api/notes/:id', (req, res) => {
 }
 );
 
-app.use(express());
+app.use(express.json());
+
+app.post('/api/notes/', (req, res) => {
+  const error = {};
+  const entry = req.body;
+  if (entry.content === undefined) {
+    error.error = 'content is a required field';
+    res.status(400).json(error);
+  } else {
+    const entry = req.body;
+    entry.id = data.nextId;
+    data.notes[data.nextId] = entry;
+    data.nextId++;
+    const newData = JSON.stringify(data, null, 2);
+    res.status(201).json(entry);
+    fs.writeFile('data.json', newData + '\n', 'utf8', err => {
+      error.error = 'An unexpected error occured.';
+      if (err) console.error(500).json(error);
+    });
+  }
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  const error = {};
+  if (id < 0) {
+    error.error = 'invalid entry... ID must be a positive number';
+    res.status(400).json(error);
+  } else if (data.notes[id] === undefined) {
+    error.error = `entry ${id} doesn't exist`;
+    res.status(404).json(error);
+  } else {
+    delete data.notes[id];
+    res.status(204).json();
+    const newData = JSON.stringify(data, null, 2);
+    fs.writeFile('data.json', newData + '\n', 'utf8', err => {
+      error.error = 'An unexpected error occured.';
+      if (err) console.error(500).json(error);
+    });
+  }
+});
+
+app.put('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  const entry = req.body;
+  const error = {};
+  if (id < 0 || entry.content === undefined) {
+    error.error = 'invalid entry... ID must be a positive number or content property was omitted';
+    res.status(400).json(error);
+  } else if (data.notes[id] === undefined) {
+    error.error = `entry ${id} doesn't exist`;
+    res.status(404).json(error);
+  } else {
+    // update here
+    const newData = JSON.stringify(data, null, 2);
+    fs.writeFile('data.json', newData + '\n', 'utf8', err => {
+      error.error = 'An unexpected error occured.';
+      if (err) console.error(500).json(error);
+    });
+  }
+});

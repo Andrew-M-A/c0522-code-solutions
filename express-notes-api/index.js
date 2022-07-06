@@ -37,7 +37,7 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.use(express.json());
 
-app.post('/api/notes/', (req, res) => {
+app.post('/api/notes', (req, res) => {
   const error = {};
   const entry = req.body;
   if (entry.content === undefined) {
@@ -49,10 +49,14 @@ app.post('/api/notes/', (req, res) => {
     data.notes[data.nextId] = entry;
     data.nextId++;
     const newData = JSON.stringify(data, null, 2);
-    res.status(201).json(entry);
     fs.writeFile('data.json', newData + '\n', 'utf8', err => {
       error.error = 'An unexpected error occured.';
-      if (err) console.error(500).json(error);
+      if (err) {
+        console.error(err);
+        res.status(500).json(error);
+      } else {
+        res.status(201).json(entry);
+      }
     });
   }
 });
@@ -72,13 +76,18 @@ app.delete('/api/notes/:id', (req, res) => {
     const newData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', newData + '\n', 'utf8', err => {
       error.error = 'An unexpected error occured.';
-      if (err) console.error(500).json(error);
+      if (err) {
+        console.error(err);
+        res.status(500).json(error);
+      } else {
+        res.status(204);
+      }
     });
   }
 });
 
 app.put('/api/notes/:id', (req, res) => {
-  const id = req.params.id;
+  const id = Number(req.params.id);
   const entry = req.body;
   const error = {};
   if (id < 0 || entry.content === undefined) {
@@ -88,11 +97,17 @@ app.put('/api/notes/:id', (req, res) => {
     error.error = `entry ${id} doesn't exist`;
     res.status(404).json(error);
   } else {
-    // update here
+    data.notes[id] = entry;
+    data.notes[id].id = id;
     const newData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', newData + '\n', 'utf8', err => {
       error.error = 'An unexpected error occured.';
-      if (err) console.error(500).json(error);
+      if (err) {
+        console.error(err);
+        res.status(500).json(error);
+      } else {
+        res.status(200).json(data.notes[id]);
+      }
     });
   }
 });

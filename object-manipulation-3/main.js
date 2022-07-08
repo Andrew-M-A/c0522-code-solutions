@@ -30,6 +30,7 @@ var deck = [];
 var suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
 var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
+// create deck and assign values to cards
 for (var suit = 0; suit < suits.length; suit++) {
   for (var rank = 0; rank < ranks.length; rank++) {
     var card = { suit: suits[suit], rank: ranks[rank] };
@@ -57,14 +58,14 @@ deal(anthony);
 deal(andrew);
 deal(alex);
 
-const greatest = [];
+const playerScores = [];
 
 const score = player => {
   player.score = null;
   for (var i = 0; i < player.hand.length; i++) {
     player.score += player.hand[i].value;
   }
-  greatest.push(player);
+  playerScores.push(player);
 };
 
 score(aj);
@@ -72,14 +73,21 @@ score(anthony);
 score(andrew);
 score(alex);
 
-// const winner = player => {
-//   let highScore = 0;
-//   let winner = null;
-//   for (var i = 0; i < greatest.length; i++) {
-//     if (greatest[i].score > highScore) {
-//       highScore = greatest[i].score;
-//       winner = greatest[i].name;
-//     }
-//   }
-//   return `${winner} is the winner with a score of ${highScore}!`;
-// };
+const winner = player => {
+  let highScore = 0;
+  let winner = null;
+  for (var i = 0; i < playerScores.length; i++) {
+    if (playerScores[i].score > highScore) {
+      highScore = playerScores[i].score;
+      winner = playerScores[i].name;
+    }
+  }
+  return `${winner} is the winner with a score of ${highScore}!`;
+};
+
+console.log(aj, anthony, andrew, alex);
+
+winner(aj);
+winner(anthony);
+winner(andrew);
+winner(alex);

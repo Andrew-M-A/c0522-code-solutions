@@ -48,9 +48,7 @@ for (var suit = 0; suit < suits.length; suit++) {
 deck = _.shuffle(deck);
 
 const deal = player => {
-  for (var i = 0; i < 1; i++) {
-    player.hand = deck.splice(0, 2);
-  }
+  player.hand = deck.splice(0, 2);
 };
 
 deal(aj);

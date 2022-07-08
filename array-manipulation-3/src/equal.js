@@ -7,6 +7,10 @@
 
 function equal(first, second) {
 
+  if (first.length !== second.length) {
+    return false;
+  }
+
   var equalityCheck = true;
 
   for (var i = 0; i < first.length; i++) {

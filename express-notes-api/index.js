@@ -10,12 +10,10 @@ app.listen(3000, () => {
 app.get('/api/notes', (req, res) => {
   const notes = [];
   for (var key in data.notes) {
-    if (data.notes[key] === undefined) {
-      res.send('There are no entries!');
-      return notes;
-    } else {
-      notes.push(data.notes[key]);
-    }
+    notes.push(data.notes[key]);
+  } if (notes.length === 0) {
+    res.send('There are no entries!');
+    return notes;
   }
   res.status(200).json(notes);
 });
@@ -72,7 +70,6 @@ app.delete('/api/notes/:id', (req, res) => {
     res.status(404).json(error);
   } else {
     delete data.notes[id];
-    res.status(204).json();
     const newData = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', newData + '\n', 'utf8', err => {
       error.error = 'An unexpected error occured.';
@@ -80,7 +77,7 @@ app.delete('/api/notes/:id', (req, res) => {
         console.error(err);
         res.status(500).json(error);
       } else {
-        res.status(204);
+        res.status(204).json();
       }
     });
   }

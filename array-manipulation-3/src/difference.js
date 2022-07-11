@@ -8,5 +8,13 @@
 // return the array defined in step 1
 
 function difference(first, second) {
-
+  const difArray = [];
+  for (var i = 0; i < first.length; i++) {
+    for (var k = 0; k < first.length; k++) {
+      if (!first.includes(second[k])) {
+        difArray.push(first[i]);
+      }
+    }
+  }
+  return difArray;
 }

@@ -1,8 +1,9 @@
 /* exported flatten */
 
+// define an empty array to hold the flattened array
 // loop through the array parameter
-// if the value of its index is an array,
-//  - loop through that array and push its values into the empty array
+// check if the value of its index is an array,
+// if it is, loop through that array and push its values into the empty array
 // if its not an array, also push that value into the empty array
 // return the new array
 

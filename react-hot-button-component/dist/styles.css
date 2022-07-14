@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 3rem;
+  width: 10rem;
+  color: white;
+}
+
+.cold-button {
+  background-color: #351c75;
+  color: white;
+}
+
+.less-cold-button {
+  background-color: #674ea7;
+  color: white;
+}
+
+.warm-button {
+  background-color: #e06666;
+  color: white;
+}
+
+.hot-button {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.hotter-button {
+  background-color: #fffa05;
+  color: black;
+}
+
+.white-hot-button {
+  background-color: white;
+  color: black;
+}

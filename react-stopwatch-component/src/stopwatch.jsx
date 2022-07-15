@@ -14,7 +14,10 @@ export class Stopwatch extends React.Component {
   }
 
   handleClick() {
-    if (this.state.isPaused) {
+    if (this.state.isPaused && this.state.counter !== 0) {
+      this.setState({ counter: 0 });
+      this.stopTimer();
+    } else if (this.state.isPaused) {
       this.startTimer();
     } else {
       this.stopTimer();

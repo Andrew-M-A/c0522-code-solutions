@@ -34,7 +34,6 @@ app.post('/api/auth/sign-up', (req, res, next) => {
                  returning ("userId", "username", "createdAt");`;
       return db.query(sql, params);
     })
-    .catch(err => next(err))
     .then(result => {
       const [user] = result.rows;
       res.status(201).json(user);

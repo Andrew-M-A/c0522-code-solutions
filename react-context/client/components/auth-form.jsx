@@ -51,7 +51,7 @@ export default class AuthForm extends React.Component {
       ? 'Register'
       : 'Log In';
     return (
-      <form className="w-100" onSubmit={handleSubmit}>
+      <form className="w-10 0" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username

@@ -1,13 +1,9 @@
 /* exported getTail */
 
 function getTail(list) {
-  if (list.next === null) {
-    return list.data;
+  let tailList = list;
+  while (tailList.next !== null) {
+    tailList = tailList.next;
   }
-  while (list.next !== null) {
-    list = list.next;
-    if (list.next.next === null) {
-      return list.next.data;
-    }
-  }
+  return tailList.data;
 }

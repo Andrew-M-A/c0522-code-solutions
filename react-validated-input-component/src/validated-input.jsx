@@ -4,23 +4,33 @@ export class ValidatedInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isInput: false
+      password: ''
     };
     this.handleInput = this.handleInput.bind(this);
   }
 
   handleInput(event) {
-    this.setState({ isInput: true });
-    // console.log(event.key);
+    this.setState({ password: event.target.value });
+
   }
 
   render() {
+    let icon;
+    if (this.state.password) {
+      icon = 'pass-green fa-solid fa-xmark fa-xl';
+    } else {
+      icon = 'pass-red fa-solid fa-xmark fa-xl';
+    }
     return (
      <div>
-       <label htmlFor="input"> Password
-       <div> <input onKeyPress={this.handleInput} type="text" />
-       </div>
-       </label>
+       <form action="`">
+       <div><label htmlFor="password"> Password</label></div>
+        <input
+        name='password'
+        onChange={this.handleInput}
+        type="text" />
+          <i className={icon}></i>
+       </form>
      </div>
     );
   }
